@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos para Jardinagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar position-fixed col-12  navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm-mb-3"
+        style="z-index:999;">
+        <div class="container">
+            <a class="navbar-brand text-warning" href=""><strong>Campos Inácio &#127793;</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="index.html">Promoções &#127872;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Produtos </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="frutiferas.html">Frutíferas</a></li>
+                        <li><a class="dropdown-item" href="nativas.html">Nativas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="ornamentais.html">Ornamentais</a></li>
+                        <li><a class="dropdown-item" href="palmeiras.html" >Palmeiras</a></li>
+                      </ul>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn bg-dark  me-5 btn-outline-primary" type="submit">Procurar</button>
+                </form>
+
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link text-warning">Quero Me Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link text-warning">Entrar</a>
+        
+        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+            
+        </nav>
+
+        <div class="container">
+           <br>
+           <br>
+           <br>
+            <div id="carouseMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouseMain" data-bs-slide-to="0" class="active" ></button>
+                  <button type="button" data-bs-target="#carouseMain" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouseMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="../imagens/nativas1.jpg" class="d-block w-100" alt="nativas1">
+                
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="../imagens/nativas2.jpg" class="d-block w-100" alt="nativa2">
+                    
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="../imagens/nativas3.jpg" class="d-block w-100" alt="nativa3">
+                    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouseMain" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouseMain" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
+            <hr class="mt-3">
+
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0"> <!--- usei a base de formulario em linha unica utilizando breakPooint para fazer uma barra de busca do propio bootstrap-->
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                <button class="btn btn-success">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-star"> <!-- usado elementos para indicar da direita para esquerda, e div centralizada-->
+                            <form class="d-inline-block">
+                                <select  class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>           <!---Classes do bootstrap para fazer um sistema de opções de buscas-->
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+
+                            </form>
+                            <nav class="d-inline-block me-3">                   <!---Mais um sistema do bootstrap Pagination para fazer as interações de mudança entre as paginas-->
+                                <ul class="pagination pagination-sm my-0">
+                                  <li class="page-item"><a class="page-link" href="nativas.html">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="nativas2.html">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                </ul>
+                              </nav>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h4 class="text-center text-warning bg-success mt-5">Onde posso colocar &#127969;?</h4>
+                    <hr>
+                    <img src="../imagens/Nativagg.jpg" class="d-none d-md-block w-100 mt-3" alt="nativa-main">
+                    <img src="../imagens/nativapp.jpg" class="d-block d-md-none w-100" alt="NAffnpp">
+
+                    <p class="bg-success mt-1 text-white">Se o seu quintal tiver o tamanho reduzido e, mesmo assim, você quiser colocar várias árvores, uma solução é recorrer aos vasos. O plantio é simples: para plantar diretamente no chão faça um buraco com cerca de 50cm e acrescente adubo no fundo. Cubra com uma pequena camada de terra e depois coloque a muda.</p>
+                </div>
+
+
+
+              
+                <hr class="mt-3 text-primary">
+
+                <div class="row g-3"> 
+
+                    <h2 class="text-center text-success">Produtos &#127808;</h2>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/acacia-chuva-de-ouro.jpg" class="card-img-top" alt="acaxia-ouro">
+                            <div class="card-header text-primary">
+                                R$15,30
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Acácia-de-Ouro</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">113,13kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/AcáciaSeial.jpg" class="card-img-top" alt="AcaciaSeial">
+                            <div class="card-header text-primary">
+                                R$14,50
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Acácia Seial</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">120,5kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/acacia_mimosa.jpg" class="card-img-top" alt="Acácia-Mimosa">
+                            <div class="card-header text-primary">
+                                R$9,90
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Acácia Mimosa</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">89,7kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/acacia-rosa.jpg" class="card-img-top" alt="Acácia-Rosa">
+                            <div class="card-header text-primary">
+                                R$13,40
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Acácia Rosa</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">130,3kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/agave-atenuata.jpg" class="card-img-top" alt="Agave Atenuata">
+                            <div class="card-header text-primary">
+                                R$9,43
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Agave Atenuata</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas  para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">133,6kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/bougainvillea.jpg" class="card-img-top" alt="bougainvillea">
+                            <div class="card-header text-primary">
+                                R$11,20
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Bougainvillea</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">66,7kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/aldrago.jpg" class="card-img-top" alt="Aldrago">
+                            <div class="card-header text-primary">
+                                R$16,40
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Aldrago</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">66,7kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/angico.jpg" class="card-img-top" alt="Angico Roxo">
+                            <div class="card-header text-primary">
+                                R$23,70
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Angico Roxo</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">125,8kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/angico-vermelho.jpg" class="card-img-top" alt="Angico Vermelho">
+                            <div class="card-header text-primary">
+                                R$10,30
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Angico Vermelho</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">91,2kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/aroeira-salsa.jpg" class="card-img-top" alt="Aroeira Salsa">
+                            <div class="card-header text-primary">
+                                R$12,30
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Aroeira Salsa</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de Nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">103,3kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/bambuza.jpg" class="card-img-top" alt="Bambuza">
+                            <div class="card-header text-primary">
+                                R$14,30
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Bambuza</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">77,9kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> <!---utilizei o sistema de colunas apresentado em sala, para deixar determinada quantidade de cards por coluna.-->
+                        <div class="card text-center bg-light">
+                            <img src="../imagens/bougainvillea-laranja.jpg" class="card-img-top" alt="BougainvilleaL">
+                            <div class="card-header text-primary">
+                                R$21,10
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title text-danger">Bougainvillea Laranja</h5>
+                              <p class="card-text">Somente no Campos Inácio,temos o melhor de nativas para você!!!!!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-success mt-2 d-block">Comprar</a>
+                                <small class="text-primary">103,2kg em nosso estoque!!</small>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+
+                </div>
+                
+                <hr class="mt-3">
+         
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-star"> <!-- usado elementos para indicar da direita para esquerda, e div centralizada-->
+                            <form class="d-inline-block">
+                                <select  class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>           <!---Classes do bootstrap para fazer um sistema de opções de buscas-->
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">                   <!---Mais um sistema do bootstrap Pagination para fazer as interações de mudança entre as paginas-->
+                                <ul class="pagination pagination-sm my-0">
+                                  <li class="page-item"><a class="page-link" href="nativas.html">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="nativas2.html">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    
+    <footer class="border-top text-muted col-12 bg-success w-100">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-info text-center">
+                    &copy; 2023 - Inácio Jardinagem<br>
+                    Rua Encantado, 777 , Rosana-Sp <br>
+                    CPNJ 94.344.679/0001-86
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="privacidade.html" class="text-decoration-none text-warning">
+                        Política de Privacidade&#128279;
+                    </a><br>
+                    <a href="termos.html" class="text-decoration-none text-warning">
+                        Termos de Uso&#128279;
+                    </a><br>
+                    <a href="quemsomos.html" class="text-decoration-none text-warning">
+                        Quem Somos?&#128279;
+                    </a><br>
+                    <a href="trocas.html" class="text-decoration-none text-warning">
+                        Trocas e Devoluções&#128279;
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-info text-center">
+                    <a href="contato.html" class="text-decoration-none text-info">
+                        Contato pelo Site&#128279;
+                    </a><br>
+                    E-mail: <a href="#" class="text-decoration-none text-info">
+                        email@***.com
+                    </a><br>
+                    Telefone: <a href="#" class="text-decoration-none text-info">
+                        (18) 981466-635
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    
+    </footer>
+
+
+</body>
+
+
+
+</html>
